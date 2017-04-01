@@ -1,0 +1,695 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A354F101E0B2B9E00867009 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 2A354F0F1E0B2B9E00867009 /* Podfile */; };
+		2A5751C01E0AFFD4008069CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5751BF1E0AFFD4008069CF /* AppDelegate.swift */; };
+		2A5751C21E0AFFD4008069CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A5751C11E0AFFD4008069CF /* Assets.xcassets */; };
+		2A5751C51E0AFFD4008069CF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A5751C31E0AFFD4008069CF /* MainMenu.xib */; };
+		2A5751E91E0B04FA008069CF /* StatusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5751E81E0B04FA008069CF /* StatusButton.swift */; };
+		2A5751EB1E0B0B6B008069CF /* StatusController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5751EA1E0B0B6B008069CF /* StatusController.swift */; };
+		2A81BDD71E8FABD7002AC4A2 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A81BDD61E8FABD7002AC4A2 /* Config.swift */; };
+		2AACFC891E0D8C720012C0A6 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AACFC881E0D8C720012C0A6 /* Event.swift */; };
+		E3C5DB93C38FD55DE89207A7 /* Pods_QuickDrop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05E21E43D7067D78ED98ECE1 /* Pods_QuickDrop.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2A5751CC1E0AFFD4008069CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A5751B41E0AFFD4008069CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A5751BB1E0AFFD4008069CF;
+			remoteInfo = QuickDrop;
+		};
+		2A5751D71E0AFFD4008069CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A5751B41E0AFFD4008069CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A5751BB1E0AFFD4008069CF;
+			remoteInfo = QuickDrop;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05E21E43D7067D78ED98ECE1 /* Pods_QuickDrop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickDrop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A354F0F1E0B2B9E00867009 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2A5751BC1E0AFFD4008069CF /* QuickDrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickDrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A5751BF1E0AFFD4008069CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2A5751C11E0AFFD4008069CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A5751C41E0AFFD4008069CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		2A5751C61E0AFFD4008069CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A5751CB1E0AFFD4008069CF /* QuickDropTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickDropTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A5751D61E0AFFD4008069CF /* QuickDropUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuickDropUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A5751E81E0B04FA008069CF /* StatusButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusButton.swift; sourceTree = "<group>"; };
+		2A5751EA1E0B0B6B008069CF /* StatusController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusController.swift; sourceTree = "<group>"; };
+		2A81BDD61E8FABD7002AC4A2 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		2AACFC881E0D8C720012C0A6 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		44114B6A75BD00EF85E776F1 /* Pods-QuickDropTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickDropTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickDropTests/Pods-QuickDropTests.release.xcconfig"; sourceTree = "<group>"; };
+		631B7F364BAF5BE50157C6D5 /* Pods-QuickDropTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickDropTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickDropTests/Pods-QuickDropTests.debug.xcconfig"; sourceTree = "<group>"; };
+		69A39BDCBE2471B48DE76122 /* Pods-QuickDrop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickDrop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickDrop/Pods-QuickDrop.debug.xcconfig"; sourceTree = "<group>"; };
+		795BC6809A371667F9C6FF83 /* Pods-QuickDrop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickDrop.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickDrop/Pods-QuickDrop.release.xcconfig"; sourceTree = "<group>"; };
+		9D2FF6E9F5C0BB9ACF3AE416 /* Pods-QuickDropUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickDropUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickDropUITests/Pods-QuickDropUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E8EC94B8B7202DDCE7E3FCAF /* Pods-QuickDropUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickDropUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickDropUITests/Pods-QuickDropUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A5751B91E0AFFD4008069CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3C5DB93C38FD55DE89207A7 /* Pods_QuickDrop.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A5751C81E0AFFD4008069CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A5751D31E0AFFD4008069CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A5751B31E0AFFD4008069CF = {
+			isa = PBXGroup;
+			children = (
+				2A5751BE1E0AFFD4008069CF /* QuickDrop */,
+				2A5751BD1E0AFFD4008069CF /* Products */,
+				C802423CB10564D4F88E8A33 /* Pods */,
+				40A635D3CF8CDBEC518A9973 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2A5751BD1E0AFFD4008069CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A5751BC1E0AFFD4008069CF /* QuickDrop.app */,
+				2A5751CB1E0AFFD4008069CF /* QuickDropTests.xctest */,
+				2A5751D61E0AFFD4008069CF /* QuickDropUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A5751BE1E0AFFD4008069CF /* QuickDrop */ = {
+			isa = PBXGroup;
+			children = (
+				2A5751BF1E0AFFD4008069CF /* AppDelegate.swift */,
+				2A5751C11E0AFFD4008069CF /* Assets.xcassets */,
+				2A5751C31E0AFFD4008069CF /* MainMenu.xib */,
+				2A5751C61E0AFFD4008069CF /* Info.plist */,
+				2A5751E81E0B04FA008069CF /* StatusButton.swift */,
+				2A5751EA1E0B0B6B008069CF /* StatusController.swift */,
+				2A354F0F1E0B2B9E00867009 /* Podfile */,
+				2AACFC881E0D8C720012C0A6 /* Event.swift */,
+				2A81BDD61E8FABD7002AC4A2 /* Config.swift */,
+			);
+			path = QuickDrop;
+			sourceTree = "<group>";
+		};
+		40A635D3CF8CDBEC518A9973 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05E21E43D7067D78ED98ECE1 /* Pods_QuickDrop.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C802423CB10564D4F88E8A33 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				69A39BDCBE2471B48DE76122 /* Pods-QuickDrop.debug.xcconfig */,
+				795BC6809A371667F9C6FF83 /* Pods-QuickDrop.release.xcconfig */,
+				631B7F364BAF5BE50157C6D5 /* Pods-QuickDropTests.debug.xcconfig */,
+				44114B6A75BD00EF85E776F1 /* Pods-QuickDropTests.release.xcconfig */,
+				9D2FF6E9F5C0BB9ACF3AE416 /* Pods-QuickDropUITests.debug.xcconfig */,
+				E8EC94B8B7202DDCE7E3FCAF /* Pods-QuickDropUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A5751BB1E0AFFD4008069CF /* QuickDrop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A5751DF1E0AFFD4008069CF /* Build configuration list for PBXNativeTarget "QuickDrop" */;
+			buildPhases = (
+				25110029EDBBAB019D279699 /* [CP] Check Pods Manifest.lock */,
+				2A5751B81E0AFFD4008069CF /* Sources */,
+				2A5751B91E0AFFD4008069CF /* Frameworks */,
+				2A5751BA1E0AFFD4008069CF /* Resources */,
+				4B03A8D7A9F1F6BD11BDF877 /* [CP] Embed Pods Frameworks */,
+				41080DA77FB2C64B7A9414D1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickDrop;
+			productName = QuickDrop;
+			productReference = 2A5751BC1E0AFFD4008069CF /* QuickDrop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2A5751CA1E0AFFD4008069CF /* QuickDropTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A5751E21E0AFFD4008069CF /* Build configuration list for PBXNativeTarget "QuickDropTests" */;
+			buildPhases = (
+				74CB330D36A45E543E0CD630 /* [CP] Check Pods Manifest.lock */,
+				2A5751C71E0AFFD4008069CF /* Sources */,
+				2A5751C81E0AFFD4008069CF /* Frameworks */,
+				2A5751C91E0AFFD4008069CF /* Resources */,
+				8C62014303C5D5DA4720487D /* [CP] Embed Pods Frameworks */,
+				ABBAC6383CCB1D270D4CF2EA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A5751CD1E0AFFD4008069CF /* PBXTargetDependency */,
+			);
+			name = QuickDropTests;
+			productName = QuickDropTests;
+			productReference = 2A5751CB1E0AFFD4008069CF /* QuickDropTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2A5751D51E0AFFD4008069CF /* QuickDropUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A5751E51E0AFFD4008069CF /* Build configuration list for PBXNativeTarget "QuickDropUITests" */;
+			buildPhases = (
+				74965799616F98725851B333 /* [CP] Check Pods Manifest.lock */,
+				2A5751D21E0AFFD4008069CF /* Sources */,
+				2A5751D31E0AFFD4008069CF /* Frameworks */,
+				2A5751D41E0AFFD4008069CF /* Resources */,
+				7D81C19501EAA5B90B8B758C /* [CP] Embed Pods Frameworks */,
+				66B2E1220757CA14ACC447C3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A5751D81E0AFFD4008069CF /* PBXTargetDependency */,
+			);
+			name = QuickDropUITests;
+			productName = QuickDropUITests;
+			productReference = 2A5751D61E0AFFD4008069CF /* QuickDropUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A5751B41E0AFFD4008069CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = cpsd;
+				TargetAttributes = {
+					2A5751BB1E0AFFD4008069CF = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					2A5751CA1E0AFFD4008069CF = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2A5751BB1E0AFFD4008069CF;
+					};
+					2A5751D51E0AFFD4008069CF = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2A5751BB1E0AFFD4008069CF;
+					};
+				};
+			};
+			buildConfigurationList = 2A5751B71E0AFFD4008069CF /* Build configuration list for PBXProject "QuickDrop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2A5751B31E0AFFD4008069CF;
+			productRefGroup = 2A5751BD1E0AFFD4008069CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A5751BB1E0AFFD4008069CF /* QuickDrop */,
+				2A5751CA1E0AFFD4008069CF /* QuickDropTests */,
+				2A5751D51E0AFFD4008069CF /* QuickDropUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A5751BA1E0AFFD4008069CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A354F101E0B2B9E00867009 /* Podfile in Resources */,
+				2A5751C21E0AFFD4008069CF /* Assets.xcassets in Resources */,
+				2A5751C51E0AFFD4008069CF /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A5751C91E0AFFD4008069CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A5751D41E0AFFD4008069CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25110029EDBBAB019D279699 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		41080DA77FB2C64B7A9414D1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickDrop/Pods-QuickDrop-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B03A8D7A9F1F6BD11BDF877 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickDrop/Pods-QuickDrop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66B2E1220757CA14ACC447C3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickDropUITests/Pods-QuickDropUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74965799616F98725851B333 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		74CB330D36A45E543E0CD630 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7D81C19501EAA5B90B8B758C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickDropUITests/Pods-QuickDropUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C62014303C5D5DA4720487D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickDropTests/Pods-QuickDropTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABBAC6383CCB1D270D4CF2EA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickDropTests/Pods-QuickDropTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A5751B81E0AFFD4008069CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AACFC891E0D8C720012C0A6 /* Event.swift in Sources */,
+				2A5751C01E0AFFD4008069CF /* AppDelegate.swift in Sources */,
+				2A81BDD71E8FABD7002AC4A2 /* Config.swift in Sources */,
+				2A5751EB1E0B0B6B008069CF /* StatusController.swift in Sources */,
+				2A5751E91E0B04FA008069CF /* StatusButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A5751C71E0AFFD4008069CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A5751D21E0AFFD4008069CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A5751CD1E0AFFD4008069CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A5751BB1E0AFFD4008069CF /* QuickDrop */;
+			targetProxy = 2A5751CC1E0AFFD4008069CF /* PBXContainerItemProxy */;
+		};
+		2A5751D81E0AFFD4008069CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A5751BB1E0AFFD4008069CF /* QuickDrop */;
+			targetProxy = 2A5751D71E0AFFD4008069CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2A5751C31E0AFFD4008069CF /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A5751C41E0AFFD4008069CF /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2A5751DD1E0AFFD4008069CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2A5751DE1E0AFFD4008069CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		2A5751E01E0AFFD4008069CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69A39BDCBE2471B48DE76122 /* Pods-QuickDrop.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = QuickDrop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cpsd.QuickDrop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2A5751E11E0AFFD4008069CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 795BC6809A371667F9C6FF83 /* Pods-QuickDrop.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = QuickDrop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cpsd.QuickDrop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		2A5751E31E0AFFD4008069CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 631B7F364BAF5BE50157C6D5 /* Pods-QuickDropTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = QuickDropTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cpsd.QuickDropTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuickDrop.app/Contents/MacOS/QuickDrop";
+			};
+			name = Debug;
+		};
+		2A5751E41E0AFFD4008069CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44114B6A75BD00EF85E776F1 /* Pods-QuickDropTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = QuickDropTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cpsd.QuickDropTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuickDrop.app/Contents/MacOS/QuickDrop";
+			};
+			name = Release;
+		};
+		2A5751E61E0AFFD4008069CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D2FF6E9F5C0BB9ACF3AE416 /* Pods-QuickDropUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = QuickDropUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cpsd.QuickDropUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = QuickDrop;
+			};
+			name = Debug;
+		};
+		2A5751E71E0AFFD4008069CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8EC94B8B7202DDCE7E3FCAF /* Pods-QuickDropUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = QuickDropUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cpsd.QuickDropUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = QuickDrop;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A5751B71E0AFFD4008069CF /* Build configuration list for PBXProject "QuickDrop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A5751DD1E0AFFD4008069CF /* Debug */,
+				2A5751DE1E0AFFD4008069CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A5751DF1E0AFFD4008069CF /* Build configuration list for PBXNativeTarget "QuickDrop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A5751E01E0AFFD4008069CF /* Debug */,
+				2A5751E11E0AFFD4008069CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A5751E21E0AFFD4008069CF /* Build configuration list for PBXNativeTarget "QuickDropTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A5751E31E0AFFD4008069CF /* Debug */,
+				2A5751E41E0AFFD4008069CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A5751E51E0AFFD4008069CF /* Build configuration list for PBXNativeTarget "QuickDropUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A5751E61E0AFFD4008069CF /* Debug */,
+				2A5751E71E0AFFD4008069CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A5751B41E0AFFD4008069CF /* Project object */;
+}

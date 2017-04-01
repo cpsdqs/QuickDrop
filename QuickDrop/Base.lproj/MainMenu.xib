@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16D17a" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="QuickDrop" customModuleProvider="target"/>
+        <customObject id="7Bd-Y3-PcE" customClass="StatusController" customModule="QuickDrop" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelUploadItem" destination="Gx7-tE-D8s" id="pfL-wg-Sct"/>
+                <outlet property="statusMenu" destination="WG2-WL-dv4" id="9ea-rB-Lu8"/>
+            </connections>
+        </customObject>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <menu autoenablesItems="NO" id="WG2-WL-dv4">
+            <items>
+                <menuItem title="Cancel Upload" id="Gx7-tE-D8s">
+                    <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                    <connections>
+                        <action selector="cancelUploadPressed:" target="7Bd-Y3-PcE" id="hU1-we-x0y"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="RKZ-Eh-alV"/>
+                <menuItem title="Upload Area" keyEquivalent="4" id="sFl-qm-SVP">
+                    <attributedString key="attributedTitle"/>
+                    <modifierMask key="keyEquivalentModifierMask" shift="YES" option="YES" command="YES"/>
+                    <connections>
+                        <action selector="uploadAreaPressed:" target="7Bd-Y3-PcE" id="wTl-aZ-TKI"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Upload Screen" keyEquivalent="3" id="j26-as-ouf">
+                    <modifierMask key="keyEquivalentModifierMask" shift="YES" option="YES" command="YES"/>
+                    <connections>
+                        <action selector="uploadScreenPressed:" target="7Bd-Y3-PcE" id="ihi-4u-dUv"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Upload File" keyEquivalent="o" id="8BR-VZ-3T7">
+                    <connections>
+                        <action selector="uploadFilePressed:" target="7Bd-Y3-PcE" id="jGa-dg-k9p"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="X4Y-nF-T7M"/>
+                <menuItem title="Quit" keyEquivalent="q" id="kaP-o7-7ch">
+                    <connections>
+                        <action selector="terminate:" target="-1" id="eOH-tL-yxc"/>
+                    </connections>
+                </menuItem>
+            </items>
+            <point key="canvasLocation" x="138.5" y="65.5"/>
+        </menu>
+    </objects>
+</document>
